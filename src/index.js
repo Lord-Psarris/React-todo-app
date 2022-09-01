@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { hop } from "@onehop/client";
 import './index.css';
 
 class Header extends React.Component {
@@ -305,6 +306,10 @@ class TodoApp extends React.Component {
         )
     }
 }
+
+hop.init({
+	projectId: "project_NDk3NDk5OTE3MzY0NTkyODI": // replace with your project ID
+})
 
 
 ReactDOM.render(
